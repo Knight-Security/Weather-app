@@ -112,6 +112,11 @@ body,
 }
 .Search-button-parent{
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.Search-button-child{
+  display: flex;
   gap: 12px;
 }
 .search-input {
@@ -137,7 +142,7 @@ body,
 /* Result Component */
 .main-result {
     height: 49vh;
-    width: 31vw;
+    width: 40vw;
     padding: 12px;
     background:
         radial-gradient(circle at top,
@@ -172,7 +177,6 @@ body,
     border: none;
     outline: none;
     border-radius: 50%;
-    ;
     cursor: pointer;
     transition: 0.3s ease;
     backdrop-filter: blur(12px);
@@ -193,6 +197,7 @@ body,
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 120px);
     gap: 12px;
+    font-size: x-large;
 }
 
 .humidity,
@@ -200,7 +205,7 @@ body,
 .max-temp,
 .min-temp {
     background: rgba(255,255,255,0.05);
-     backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
     border: 1px solid rgba(255,255,255,0.08);
     color: rgba(218, 226, 253, 0.9);
     transition: 0.3s ease;
